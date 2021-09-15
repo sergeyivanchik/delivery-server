@@ -12,6 +12,7 @@ mongoose.plugin(toJson);
 require('./src/utils/db.js').setUpConnection()
 require('./src/models/category');
 require('./src/models/status');
+require('./src/models/banner');
 
 const port = require('./src/constants/app').PORT;
 
