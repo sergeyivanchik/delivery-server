@@ -10,6 +10,7 @@ const mongoose = require('mongoose');
 mongoose.plugin(toJson);
 
 require('./src/utils/db.js').setUpConnection()
+require('./src/models/category');
 
 const port = require('./src/constants/app').PORT;
 
@@ -18,5 +19,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 app.use(jsonParser);
+
+app.use('/',require('./src/routes/index'));
 
 server.listen(port, () => console.log('port', port));
