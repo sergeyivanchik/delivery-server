@@ -1,9 +1,13 @@
 const router = require('express').Router();
 const controller = require('../controllers/category');
 
-router.route("/")
+router.route('/')
   .get(controller.getAll)
-  .post(controller.create)//create
-  // .put change
+  .post(controller.create)
+
+router.route('/:id')
+  .get(controller.getOne)
+  .delete(controller.deleteOne)
+  .put(controller.update)
 
 module.exports = router;
