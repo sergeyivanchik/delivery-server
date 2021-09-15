@@ -13,6 +13,7 @@ require('./src/utils/db.js').setUpConnection()
 require('./src/models/category');
 require('./src/models/status');
 require('./src/models/banner');
+require('./src/models/contact');
 
 const port = require('./src/constants/app').PORT;
 
