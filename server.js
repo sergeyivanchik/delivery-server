@@ -14,6 +14,7 @@ require('./src/models/category');
 require('./src/models/status');
 require('./src/models/banner');
 require('./src/models/contact');
+require('./src/models/sale');
 
 const port = require('./src/constants/app').PORT;
 
